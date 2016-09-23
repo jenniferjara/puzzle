@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Courier;
+	font-size: 16px;
+}
+body {
+	background-image: url(../img/wall-16.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+}
+
+/*-----Responsive--------*/
+@media (max-width: 1024px){
+	body{
+	font-size: 16px;
+	}
+}
+@media (max-width: 982px){
+	body{
+	font-size: 14px;
+	}
+}
+@media (max-width: 768px){
+	body{
+	font-size: 14px;
+	}
+}
+@media (max-width: 640px){
+	body{
+	font-size: 12px;
+	}
+}
