@@ -1,18 +1,28 @@
-* {
+html, body {
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
+	height: 100%;
+	width: 100%;
 	font-family: Courier;
 	font-size: 16px;
 }
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .content{
-	width: 250px;
-	height: 200px;
+	width: 32%;
+	height: 450px;
 	background-color: rgba(30,144,255,0.5);
 	padding: 1%;
+	display: inline-block;
 }
-#img{
-	width: 200px;
+.img{
+	width: 32%;
+	display: inline-block;
+	margin-right: 1%;
 }
 .w-100{
 	width: 100%;
