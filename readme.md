@@ -9,4 +9,4 @@ En este repositorio se muestra un juego simple para ordenar imagenes según el e
 
 ## RESULTADO
 
-![imagen](![imagen](http://i64.tinypic.com/k4xsh4.png))
+![imagen](http://i64.tinypic.com/k4xsh4.png))
