@@ -1,4 +1,12 @@
 window.addEventListener("load", function() {
+	var boton = document.getElementById("go");
+	boton.addEventListener("click", function(){
+		boton.classList.add("goClick");
+		play();
+	});
+});
+
+function play() {
 	var box1 = document.getElementById("box1");
 	var box2 = document.getElementById("box2");
 	var box3 = document.getElementById("box3");
@@ -12,55 +20,51 @@ window.addEventListener("load", function() {
 	box1.addEventListener("drop", function(ev){
 		uno(ev);
 	});
-	
 	box1.addEventListener("dragover", function(ev){
 		 ev.preventDefault();
 	});
-//2
+
 	box2.addEventListener("drop", function(ev){
 		uno(ev);
 	});
-
 	box2.addEventListener("dragover", function(ev){
 		 ev.preventDefault();
 	});
-//3
+
 	box3.addEventListener("drop", function(ev){
 		uno(ev);
 	});
-
 	box3.addEventListener("dragover", function(ev){
 		 ev.preventDefault();
 	});
-//4
+
 	box4.addEventListener("drop", function(ev){
 		uno(ev);
 	});
-
 	box4.addEventListener("dragover", function(ev){
 		 ev.preventDefault();
 	});
+
+	img1.addEventListener("dragstart", function(ev){
+		imgStart(ev);
+	});
+	img2.addEventListener("dragstart", function(ev){
+		imgStart(ev);
+	});
+	img3.addEventListener("dragstart", function(ev){
+		imgStart(ev);
+	});
+	img4.addEventListener("dragstart", function(ev){
+		imgStart(ev);
+	});
+
 	function uno(ev){
 		ev.preventDefault();
 	    var data = ev.dataTransfer.getData("text");
 	    ev.target.appendChild(document.getElementById(data));
 	}
-//imgs
 
-	img1.addEventListener("dragstart", function(ev){
-		imagen(ev);
-	});
-	img2.addEventListener("dragstart", function(ev){
-		imagen(ev);
-	});
-
-	img3.addEventListener("dragstart", function(ev){
-		imagen(ev);
-	});
-	img4.addEventListener("dragstart", function(ev){
-		imagen(ev);
-	});
-	function imagen(ev){
+	function imgStart(ev){
 		ev.dataTransfer.setData("text", ev.target.id);
 	}
-});
+}
