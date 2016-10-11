@@ -1,12 +1,11 @@
-window.addEventListener("load", function() {
-	var boton = document.getElementById("go");
-	boton.addEventListener("click", function(){
-		boton.classList.add("goClick");
-		play();
-	});
-});
+window.addEventListener("load", inicio);
+var boton = document.getElementById("go");
+function inicio(){
+	boton.addEventListener("click", play);
+}
 
 function play() {
+	boton.classList.add("goClick");
 	var box1 = document.getElementById("box1");
 	var box2 = document.getElementById("box2");
 	var box3 = document.getElementById("box3");
